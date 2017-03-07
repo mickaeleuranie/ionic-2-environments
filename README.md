@@ -14,7 +14,7 @@ _[Note] This is for a basic Ionic 2 installation. Your configuration may be diff
 2) Copy `src/providers/environment.ts` file into your `providers` folder
 3) Update your `app/app.module.ts` file like this :
 
-```
+```javascript
 // add this line in import part
 import { Environment } from '../providers/environment';
 
@@ -33,7 +33,7 @@ providers: [
 
 1) In a provider or a page, import the `Environment` provider
 
-```
+```javascript
 // if in a provider
 import { Environment } from './environment';
 
@@ -46,7 +46,7 @@ import { Environment } from '../providers/environment';
 
 2) Get your environment variables in your code
 
-```
+```javascript
 this.environment.getApiUrl();
 this.environment.getApiVersion();
 this.environment.getApiKey();
@@ -56,7 +56,7 @@ this.environment.getApiKey();
 
 Simply execute next code in root folder
 
-```
+```bash
 # switch to development
 ./switch.sh dev
 
@@ -74,7 +74,7 @@ Exemple, if you want to add a `API_PROTOCOL` variable :
 
 `src/environments/environment.ts`
 
-```
+```javascript
     /**
      * DEVELOPMENT
      */
@@ -100,7 +100,7 @@ Exemple, if you want to add a `API_PROTOCOL` variable :
 
 `src/providers/environment.ts`
 
-```
+```javascript
     public getApiProtocol() : string{
         return ENV[ENV.currentEnvironment].API_PROTOCOL;
     }
