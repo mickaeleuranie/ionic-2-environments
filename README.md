@@ -94,7 +94,7 @@ Exemple, if you want to add a `API_PROTOCOL` variable :
         API_BASE_URL: "API_PATH_PROD",
         API_VERSION: "1",
         API_KEY: "API_KEY_PROD",
-        API_PROTOCAL: "https",
+        API_PROTOCOL: "https",
     };
 ```
 
